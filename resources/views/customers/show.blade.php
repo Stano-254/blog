@@ -4,8 +4,8 @@
     <div class="row offset-4">
         <div class="col-12">
             <h3 class=" text-primary">Details for {{$customer->name}}</h3>
-            <button type="button" class ="btn btn-outline-secondary " ><a href="/customers/{{$customer->id}}/edit">Edit</a> </button><br><br>
-            <form action="/customers/{{$customer->id}}" method="post">
+            <button type="button" class ="btn btn-outline-secondary " ><a href="{{route('customers.edit',['customer'=>$customer])}}">Edit</a> </button><br><br>
+            <form action="{{route('customer.destroy',['customer'=>$customer])}}" method="post">
                 @method('delete')
                 @csrf
                 <button type="submit" class ="btn btn-danger ">DELETE</button><br><br>

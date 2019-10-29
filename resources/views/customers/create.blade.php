@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <form action="/customers" method="post"class="pt-3">
+            <form action="{{route('customers.store')}}" method="post"class="pt-3">
             @include('customers.form')
             @csrf
             <button type="submit" class="btn btn-primary">Add Customer</button>

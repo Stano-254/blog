@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class CustomersController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index','show']);
+    }
 
     public function index(){
         $customers = Customer::all();
@@ -39,7 +43,7 @@ class CustomersController extends Controller
 //        $customer->email=request('email');
 //        $customer->active=request('active');
 //        $customer->save();
-        return redirect('customers');
+        return redirect(route('customers.index'));
     }
 
     /**
@@ -59,13 +63,13 @@ class CustomersController extends Controller
     public function update(Customer $customer){
 
         $customer->update($this->validateRequest());
-        return redirect('customers/'.$customer->id);
+        return redirect(route('customers.show',[$customer->id]));
     }
 
     public function destroy(Customer $customer){
         $customer->delete();
 
-        return redirect('customers');
+        return redirect( route('customers.index'));
     }
 
     private function validateRequest()

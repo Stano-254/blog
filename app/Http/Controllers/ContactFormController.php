@@ -20,7 +20,7 @@ class ContactFormController extends Controller
         ]);
 // send mail
         Mail::to('test@stanodeveloper.com')->send(new ContactFormMail($data));
-        return redirect ('contacts')->with('message','Thanks for your message we\'ll be in touch');
+        return redirect (route('contacts.create'))->with('message','Thanks for your message we\'ll be in touch');
 
 
     }

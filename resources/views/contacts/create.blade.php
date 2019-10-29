@@ -6,7 +6,7 @@
 @section('content')
     <h1>contact us </h1>
 
-        <form action="/contacts" method="post">
+        <form action="{{route('contacts.store')}}" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
                 <div>{{$errors->first('name')}}</div>

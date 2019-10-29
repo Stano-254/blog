@@ -29,7 +29,7 @@
                 <th>status</th>
                 </thead>
                 @foreach( $customers as $customer)
-                    <tr><td><a href="/customers/{{$customer->id}}">{{$customer->name}}</a></td>
+                    <tr><td><a href="{{route('customers.show',['$customer'=>$customer])}}">{{$customer->name}}</a></td>
                         <td >{{$customer->email}}</td>  <td>{{$customer->company->name}}</td><td>{{$customer->active}}</td></tr>
                 @endforeach
             </table>
