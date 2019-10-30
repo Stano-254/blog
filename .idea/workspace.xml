@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca06ed6c-93b1-48b7-8f76-6a21ec3b0fdc" name="Default Changelist" comment="change the routing of the links to use URl helpers">
-      <change afterPath="$PROJECT_DIR$/app/Events/NewCustomerHasRegisteredEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Listeners/WelcomeNewCustomerListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mail/WelcomeNewUserMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/new-welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="ca06ed6c-93b1-48b7-8f76-6a21ec3b0fdc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,6 +240,7 @@
       <workItem from="1572281488794" duration="5926000" />
       <workItem from="1572301434267" duration="7315000" />
       <workItem from="1572430762887" duration="397000" />
+      <workItem from="1572432918465" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary=" initial staging of home page and cutomers's page">
       <created>1572303728146</created>
@@ -278,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572312075860</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change the routing of the links to use URl helpers">
+      <created>1572433073624</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572433073624</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
