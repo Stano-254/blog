@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <form action="{{route('customers.edit',['customer'=>$customer])}}" method="post"class="pt-3">
+            <form action="{{route('customers.update',['customer'=>$customer])}}" method="post" class="pt-3">
                 @method('patch')
                 @include('customers.form')
                 <button type="submit" class="btn btn-info">Save Customer</button>
