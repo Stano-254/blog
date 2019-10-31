@@ -241,6 +241,7 @@
       <workItem from="1572301434267" duration="7315000" />
       <workItem from="1572430762887" duration="397000" />
       <workItem from="1572432918465" duration="602000" />
+      <workItem from="1572560996564" duration="229000" />
     </task>
     <task id="LOCAL-00001" summary=" initial staging of home page and cutomers's page">
       <created>1572303728146</created>
@@ -270,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572433073624</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added seeders for the database">
+      <created>1572561100695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572561100695</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added seeders for the database">
+      <created>1572561173437</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572561173437</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +307,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" initial staging of home page and cutomers's page" />
     <MESSAGE value="change the routing of the links to use URl helpers" />
-    <option name="LAST_COMMIT_MESSAGE" value="change the routing of the links to use URl helpers" />
+    <MESSAGE value="Added seeders for the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added seeders for the database" />
   </component>
 </project>
