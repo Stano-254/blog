@@ -33,27 +33,15 @@
                         <td >{{$customer->email}}</td>  <td>{{$customer->company->name}}</td><td>{{$customer->active}}</td></tr>
                 @endforeach
             </table>
-
+            <div class="row">
+                <div class="col-12 d-flex jumbotron-fluid justify-content-center pt-5 ">
+                    {{$customers->links()}}
+                </div>
+            </div>
         </div>
 
 
-        <div class="col-6 border-right">
-            <h4>Company Customers</h4>
-            <table   class="table  table-striped  table-bordered" >
-                <thead class="bg-dark text-white">
-                <th>Name</th>
-                <th>Email</th>
-                <th>status</th>
-                </thead>
-                @foreach( $companies as $company)
-                    <tr><td class="bg-info " colspan="12">{{$company->name}}</td></tr>
-                    @foreach($company->customer as $customer)
-                    <tr><td >{{$customer->name}} </td><td >{{$customer->email}}</td>  <td>{{$customer->active}}</td></tr>
-                @endforeach
-              @endforeach
-            </table>
 
-        </div>
 
     </div>
 

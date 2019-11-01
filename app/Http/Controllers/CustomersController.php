@@ -20,17 +20,19 @@ class CustomersController extends Controller
 
     public function index(){
 
-        $customers = Customer::all();
+        $customers = Customer::with('company')->paginate(10);
+//        dd($customers->toArray());
 
-          $companies = Company::all();
+//          $companies = Company::all();
 
-          return view('customers.index',compact('customers','companies'));
+          return view('customers.index',compact('customers'));
     }
 
 
     public function create(){
 
         $customer= new Customer();
+
 
         $companies = Company::all();
 
