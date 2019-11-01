@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Company;
 use App\Customer;
 use App\Events\NewCustomerHasRegisteredEvent;
+use Intervention\Image\Facades\Image;
 
 
 class CustomersController extends Controller
@@ -40,6 +41,7 @@ class CustomersController extends Controller
     public function store(){
 
        $customer= Customer::create($this->validateRequest());
+       $this ->storeImage($customer);
 
        event(new NewCustomerHasRegisteredEvent($customer));
 
@@ -65,6 +67,7 @@ class CustomersController extends Controller
     public function update(Customer $customer){
 
         $customer->update($this->validateRequest());
+        $this ->storeImage($customer);
 
         return redirect(route('customers.show',[$customer->id]));
     }
@@ -80,13 +83,35 @@ class CustomersController extends Controller
 
     private function validateRequest()
     {
-          return request()->validate([
-            'name'=>'required | min:3',
-            'email'=>'required',
-            'active'=>'required',
-            'company_id'=>'required',
-        ]);
 
+
+         return tap(request()->validate([
+             'name'=>'required | min:3',
+             'email'=>'required',
+             'active'=>'required',
+             'company_id'=>'required',
+         ]),function () {
+             if (request()->hasFile('image')) {
+                 request()->validate([
+                     'image' => 'file|image|max:5000',
+
+                 ]);
+
+             }
+
+
+         });
+    }
+
+    public  function storeImage($customer){
+        if(request()->has('image')){
+            $customer->update([
+               'image'=>request()->image->store('uploads','public')
+            ]);
+
+            $image = Image::make(public_path('storage/'. $customer->image))->fit(200,200);
+            $image->save();
+        }
     }
 
 }

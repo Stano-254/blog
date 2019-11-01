@@ -20,7 +20,11 @@
             <table   class="table  table-striped  table-bordered" >
                 <thead class="bg-dark text-white">
 
-                <th colspan="2">{{$customer->name}}</th>
+                <th colspan="2">{{$customer->name}}
+                    @if($customer->image)
+                        <img src="{{asset('storage/'.$customer->image)}}" alt="" class="center" style="border-radius: 50%">
+                        @endif
+                </th>
                 </thead>
                 <tr><td class="bg-dark text-white">ID</td><td>{{$customer->id}}</td></tr>
                 <tr><td class="bg-dark text-white">Name</td><td>{{$customer->name}}</td></tr>

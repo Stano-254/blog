@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <form action="{{route('customers.store')}}" method="post"class="pt-3">
+            <form action="{{route('customers.store')}}" method="post"class="pt-3" enctype="multipart/form-data">
             @include('customers.form')
             @csrf
             <button type="submit" class="btn btn-primary">Add Customer</button>

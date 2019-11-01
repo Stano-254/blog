@@ -34,5 +34,11 @@
             @endforeach
         </select>
     </div>
+
+   <div class="form-group d-flex flex-column">
+       <div>{{$errors->first('image')}}</div>
+       <label for="image">Profile image</label>
+       <input type="file" id="image" name="image" class="py-2">
+   </div>
     @csrf
 
