@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca06ed6c-93b1-48b7-8f76-6a21ec3b0fdc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_27_093327_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_27_093327_create_customers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CustomersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CustomersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="ca06ed6c-93b1-48b7-8f76-6a21ec3b0fdc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +244,7 @@
       <workItem from="1572301434267" duration="7315000" />
       <workItem from="1572430762887" duration="397000" />
       <workItem from="1572432918465" duration="602000" />
-      <workItem from="1572560996564" duration="6915000" />
+      <workItem from="1572560996564" duration="7156000" />
     </task>
     <task id="LOCAL-00001" summary=" initial staging of home page and cutomers's page">
       <created>1572303728146</created>
@@ -310,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572561233947</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add image upload functionality">
+      <created>1572568205149</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572568205149</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +325,7 @@
     <MESSAGE value=" initial staging of home page and cutomers's page" />
     <MESSAGE value="change the routing of the links to use URl helpers" />
     <MESSAGE value="Added seeders for the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added seeders for the database" />
+    <MESSAGE value="add image upload functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add image upload functionality" />
   </component>
 </project>
