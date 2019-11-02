@@ -18,7 +18,10 @@
     <h3 class="offset-md-4 text-primary ">Customer list</h3>
 
         <hr style="width: 70%">
-    <button type="button" class ="btn btn-outline-secondary " ><a href="customers/create">Add Customer</a> </button><br><br>
+    @can('create',App\Customer::class)
+        <button type="button" class ="btn btn-outline-secondary " ><a href="customers/create">Add Customer</a> </button><br><br>
+        @endcan
+
     <div class="row">
         <div class="col-12">
             <table   class="table  table-striped  table-bordered" >

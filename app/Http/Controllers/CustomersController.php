@@ -14,7 +14,7 @@ class CustomersController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth')->except(['index','show']);
+//        $this->middleware('auth')->except(['index','show']);
     }
 
 
@@ -41,9 +41,10 @@ class CustomersController extends Controller
 
 
     public function store(){
-
+      $this->authorize('create',Customer::class);
        $customer= Customer::create($this->validateRequest());
        $this ->storeImage($customer);
+
 
        event(new NewCustomerHasRegisteredEvent($customer));
 
@@ -76,6 +77,8 @@ class CustomersController extends Controller
 
 
     public function destroy(Customer $customer){
+
+        $this ->authorize('delete',$customer);
 
         $customer->delete();
 
