@@ -32,7 +32,13 @@
                 <th>status</th>
                 </thead>
                 @foreach( $customers as $customer)
-                    <tr><td><a href="{{route('customers.show',['$customer'=>$customer])}}">{{$customer->name}}</a></td>
+                    <tr><td>@can('view',$customer)
+                            <a href="{{route('customers.show',['$customer'=>$customer])}}">{{$customer->name}}</a>
+                                @endcan
+                            @cannot('view',$customer)
+                                {{$customer->name}}
+                                @endcannot
+                        </td>
                         <td >{{$customer->email}}</td>  <td>{{$customer->company->name}}</td><td>{{$customer->active}}</td></tr>
                 @endforeach
             </table>

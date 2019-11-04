@@ -14,7 +14,7 @@ class CustomersController extends Controller
 
     public function __construct()
     {
-//        $this->middleware('auth')->except(['index','show']);
+        $this->middleware('auth');
     }
 
 
@@ -54,7 +54,7 @@ class CustomersController extends Controller
 
     public  function show(Customer $customer){
 
-
+//        $this ->authorize('view',$customer);
        return view ('customers.show',compact('customer'));
     }
 

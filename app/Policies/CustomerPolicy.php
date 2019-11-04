@@ -30,7 +30,9 @@ class CustomerPolicy
      */
     public function view(User $user, Customer $customer)
     {
-        //
+        return in_array($user-> email,[
+            'admin@admin.co.ke',
+        ]);
     }
 
     /**
