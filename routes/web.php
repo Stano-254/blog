@@ -19,6 +19,9 @@ Route::get('contacts','ContactFormController@create')->name('contacts.create');
 Route::post('contacts','ContactFormController@store')->name('contacts.store');
 Route::view('about','about')->name('about');
 
+Route::get('/admin','AdminController@login');
+Route::match(['get','post'],'/admin','AdminController@login');
+
 Route::get('customers','CustomersController@index')->name('customers.index');
 Route::get('customers/create','CustomersController@create')->name('customers.create');
 Route::post('customers','CustomersController@store')->name('customers.store');
